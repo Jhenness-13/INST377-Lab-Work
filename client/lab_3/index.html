@@ -3,3 +3,56 @@
     - The styles in this folder's `style.css`
     - The script in script.js, which should be included via a `<script src="script.js" >` call before your closing </body> tag 
 -->
+
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+        <meta name="viewport" content="width=depth-width, initial-scale=1.0" />
+        <title>Jack Hennessey INST377 Lab2</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+        <div>
+            <header class="header"><h1>Jack Hennessey's Lab2 for INST377!</h1></header>
+            <div class="container">
+                <!--container-->
+                <div class="left_section box">
+                <!--left side-->
+                    <h2>Album Names</h2>
+                    <ol>
+                        <li> Muva Russia - Fat Trel </li>
+                        <li> Ultimate Selection - Gregory Isaacs </li>
+                        <li> Reasonable Doubt - Jay Z </li>
+                        <li> 444 - Jay Z </li>
+                        <li> Drip Season 2 - Gunna </li>
+                    </ol>
+                </div>
+                <div>
+                    <!--right side-->
+                    <!-- Image Box-->
+                    <div class="right_section box">
+                    <h2>Image Carousel</h2>
+                    <div class="carousel">
+                        <button class="prev">prev</button>
+                        <div class="slides" >
+                            <div class="carousel_item visible"><img id="slide_1" src="images\dog1.png" alt="A picture of a cute dog"/></div>
+                            <div class="carousel_item hidden"> <img id="slide_2" src= "images\dog2.jpg"alt="A picture of a cute dog"/></div>
+                            <div class="carousel_item hidden"> <img id="slide_3" src="images\dog3.jpg" alt="A picture of a cute dog"/></div>
+                            <div class="carousel_item hidden"> <img id="slide_4" src="images\dog4.jpeg" alt="A picture of a cute dog"/></div>
+                        </div>
+                        <button class="next">next</button>
+                    </div>
+                    <div class="box">
+                        Carousel Description above</div>
+                    </div>
+                </div>
+            </div> 
+            <footer class="footer">MY GITHUB ACCOUNT: <a href="https://github.com/Jhenness-13"> Jhenness-13 </a>
+            </footer>
+        </div>
+        <script src="script.js" ></script>
+    </body>
+</html>
