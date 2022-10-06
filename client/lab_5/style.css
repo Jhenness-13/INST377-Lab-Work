@@ -34,10 +34,6 @@ form label {
 
 /* How To Write A Media Query For Small Screens */
 
-map{
-    display: none;
-}
-
 * {
   box-sizing: border-box;
 }
