@@ -18,7 +18,18 @@ function getRandomIntInclusive(min, max) {
 
 function injectHTML(list) {
   console.log('fired injectHTML');
-  /*
+  const target = document.querySelector('#restaurant_list');
+  target.innerHTML = '';
+
+  const listEl = document.createElement('ol');
+  target.appendChild(listEl);
+  list.forEach((item) => {
+    const el = document.createElement('li');
+    el.innerHTML = item.name;
+    listEl.appendChild(el);
+  });
+}
+/*
   ## JS and HTML Injection
     There are a bunch of methods to inject text or HTML into a document using JS
     Mainly, they're considered "unsafe" because they can spoof a page pretty easily
@@ -31,8 +42,6 @@ function injectHTML(list) {
     - using a .forEach method, inject a list element into your index.html for every element in the list
     - Display the name of that restaurant and what category of food it is
 */
-}
-
 function processRestaurants(list) {
   console.log('fired restaurants list');
   const range = [...Array(15).keys()];
@@ -109,7 +118,7 @@ async function mainEvent() {
 
       // This constant will have the value of your 15-restaurant collection when it processes
       const restaurantList = processRestaurants(arrayFromJson.data);
-      console.log(restaurantList)
+      console.log(restaurantList);
 
       // And this function call will perform the "side effect" of injecting the HTML list for you
       injectHTML(restaurantList);
