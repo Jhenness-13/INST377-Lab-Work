@@ -314,8 +314,8 @@ background-color:cornflowerblue
   height: 80px;
 }
 .lds-ellipsis_hidden{
-  display: none;
-  }
+  display: hidden;
+}
 .lds-ellipsis div {
   position: absolute;
   top: 33px;
