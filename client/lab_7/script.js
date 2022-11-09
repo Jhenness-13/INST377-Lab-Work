@@ -87,7 +87,7 @@ async function mainEvent() {
 
   // the async keyword means we can make API requests
   const form = document.querySelector('.main_form'); // get your main form so you can do JS with it
-  const submit = document.querySelector('#get-resto'); // get a reference to your submit button
+  const submit = document.querySelector('#get_resto'); // get a reference to your submit button
   const loadAnimation = document.querySelector('.lds-ellipsis');
   submit.style.display = 'none'; // let your submit button disappear
 
@@ -121,14 +121,14 @@ async function mainEvent() {
     loadAnimation.classList.add('.lds-ellipsis_hidden');
 
     let currentList = [];
-
     form.addEventListener('input', (event) => {
       console.log(event.target.value);
       const newFilterList = filterList(currentList, event.target.value);
       injectHTML(newFilterList);
     });
+    // if(arrayFromJson.data?.length)
     // And here's an eventListener! It's listening for a "submit" button specifically being clicked
-    // this is a synchronous event event, because we already did our async request above, and waited for it to 
+    // this is a synchronous event event, because we already did our async request above, and waited for it to
     // const filteredList = filterList(currentList, event.target.value);
     form.addEventListener('submit', (submitEvent) => {
       // This is needed to stop our page from changing to a new URL even though it heard a GET request
