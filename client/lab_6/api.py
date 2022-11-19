@@ -14,6 +14,4 @@ data = res.read()
 
 print(data.decode("utf-8"))
 
-
-
- const submit = document.querySelector('button[type="submit"]');
+const submit = document.querySelector('button[type="submit"]');

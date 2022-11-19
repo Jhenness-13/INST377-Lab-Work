@@ -1,33 +1,36 @@
-<html>
+<html lang="en">
 <head>
-<title>Jack Hennessey Lab1 For INST377</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Project Base branch</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
-  <div class="wrapper" >
-    <h1>Restaurant Name: Chef Volas</h1>
-    <h2>Food Preference: Italian</h2>
-    <h3>
-      Favorite Albums:
-    </h3>
-    <h4>
-      Album Names:
-    </h4>
-    <ol>
-      <li> Muva Russia - Fat Trel </li>
-      <li> Ultimate Selection - Gregory Isaacs </li>
-      <li> Reasonable Doubt - Jay Z </li>
-      <li> 444 - Jay Z </li>
-      <li> Drip Season 2 - Gunna </li>
-    </ol>
-    <h4>
-    Image Carousel
-    </h4>
-    <img src='images/mochi.jpg' width='75'/>
-    <img src='images/mochi.gif' width='75'/>
-    <img src='images/mochi.png' width='75'/>
-    <img src='images/mochi.svg' width="75"/>
-
-    <footer>Carousel Description above</footer>  
-    <footer>GitHub Account Name: https://github.com/Jhenness-13</footer>
-    </div> 
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>Group 14 Final Project INST 377 NBA API Charts</h1>
+        </header>
+        <div class="container">
+            <div class="left_section">
+                <h3>Click Button to produce a chart
+                    
+                </h3>
+                <form action="/api" class="main_form">
+                    <button type="submit" id="get_resto">Get Charts</button>
+                </form>
+            </div>
+            <div class="right_section">
+                <h3> Charts </h3>
+                <div class="box" id="Chart Description">
+                  <img id="graph_1" src="images\basic-bar-graph.png" alt="Example Graph 1" width="500" height="500">
+                This Graph was produced by the NBA API
+                </div>
+            </div>
+        </div>
+        Group 14 GITHUB REPOSITORY: <a href="https://github.com/Jhenness-13/Group14-Final-Project-NBA-endpoint"> Group14-Final-Project-NBA-endpoint </a>
+        </footer>
+    </div>
+    <script src="./script.js"></script>
+</body>
 </html>

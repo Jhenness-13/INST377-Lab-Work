@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Jack Hennessey Lab1 For INST377</title>
+</head>
+
+  <div class="wrapper" >
+    <h1>Restaurant Name: Chef Volas</h1>
+    <h2>Food Preference: Italian</h2>
+    <h3>
+      Favorite Albums:
+    </h3>
+    <h4>
+      Album Names:
+    </h4>
+    <ol>
+      <li> Muva Russia - Fat Trel </li>
+      <li> Ultimate Selection - Gregory Isaacs </li>
+      <li> Reasonable Doubt - Jay Z </li>
+      <li> 444 - Jay Z </li>
+      <li> Drip Season 2 - Gunna </li>
+    </ol>
+    <h4>
+    Image Carousel
+    </h4>
+    <img src='images/mochi.jpg' width='75'/>
+    <img src='images/mochi.gif' width='75'/>
+    <img src='images/mochi.png' width='75'/>
+    <img src='images/mochi.svg' width="75"/>
+
+    <footer>Carousel Description above</footer>  
+    <footer>GitHub Account Name: https://github.com/Jhenness-13</footer>
+    </div> 
+</html>
